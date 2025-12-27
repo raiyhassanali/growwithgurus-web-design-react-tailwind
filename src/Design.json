@@ -1,0 +1,1837 @@
+{
+  "projectName": "Grow With Gurus (GWG) - Educational Platform",
+  "version": "1.0",
+  "framework": "React + Tailwind CSS",
+  "brandIdentity": {
+    "primaryColor": {
+      "orange": {
+        "50": "#FFF7ED",
+        "100": "#FFEDD5",
+        "200": "#FED7AA",
+        "300": "#FDBA74",
+        "400": "#FB923C",
+        "500": "#FF6B00",
+        "600": "#EA580C",
+        "700": "#C2410C",
+        "800": "#9A3412",
+        "900": "#7C2D12"
+      }
+    },
+    "neutralColors": {
+      "black": "#000000",
+      "darkGray": "#1A1A1A",
+      "mediumGray": "#333333",
+      "lightGray": "#666666",
+      "white": "#FFFFFF",
+      "offWhite": "#F9FAFB"
+    },
+    "accentColors": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    },
+    "typography": {
+      "fontFamily": {
+        "primary": "Inter, system-ui, -apple-system, sans-serif",
+        "secondary": "Poppins, sans-serif"
+      },
+      "fontSizes": {
+        "xs": "0.75rem",
+        "sm": "0.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "xl": "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "3.75rem"
+      }
+    }
+  },
+  "pages": [
+    {
+      "pageName": "Homepage",
+      "route": "/",
+      "sections": [
+        {
+          "sectionName": "Navigation Header",
+          "component": "Navbar",
+          "layout": {
+            "position": "fixed top-0 w-full z-50",
+            "background": "bg-black/95 backdrop-blur-sm",
+            "padding": "px-6 lg:px-12 py-4",
+            "border": "border-b border-orange-500/20"
+          },
+          "content": {
+            "logo": {
+              "type": "image + text",
+              "text": "GROW WITH GURUS",
+              "fontSize": "text-xl font-bold",
+              "color": "text-white",
+              "logoAccent": "text-orange-500"
+            },
+            "menuItems": [
+              {
+                "label": "HOME",
+                "link": "/",
+                "style": "text-white hover:text-orange-500 transition-colors text-sm font-medium"
+              },
+              {
+                "label": "ABOUT US",
+                "link": "/about",
+                "style": "text-white hover:text-orange-500 transition-colors text-sm font-medium"
+              },
+              {
+                "label": "MDCAT PREP",
+                "link": "/mdcat",
+                "style": "text-white hover:text-orange-500 transition-colors text-sm font-medium"
+              },
+              {
+                "label": "SCHOLARSHIPS",
+                "link": "/scholarships",
+                "dropdown": true,
+                "style": "text-white hover:text-orange-500 transition-colors text-sm font-medium"
+              },
+              {
+                "label": "WORKSHOPS",
+                "link": "/workshops",
+                "style": "text-white hover:text-orange-500 transition-colors text-sm font-medium"
+              },
+              {
+                "label": "COMMUNITY",
+                "link": "/community",
+                "style": "text-white hover:text-orange-500 transition-colors text-sm font-medium"
+              },
+              {
+                "label": "CONTACT US",
+                "link": "/contact",
+                "style": "text-white hover:text-orange-500 transition-colors text-sm font-medium"
+              }
+            ],
+            "ctaButtons": [
+              {
+                "label": "Login",
+                "style": "border border-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-500/10 transition-all text-sm font-medium"
+              },
+              {
+                "label": "Register",
+                "style": "bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-all text-sm font-medium shadow-lg shadow-orange-500/30"
+              }
+            ]
+          }
+        },
+        {
+          "sectionName": "Hero Section",
+          "component": "HeroWithLoginForm",
+          "layout": {
+            "display": "grid lg:grid-cols-2 gap-8",
+            "background": "bg-black",
+            "padding": "pt-24 pb-16 px-6 lg:px-12",
+            "minHeight": "min-h-screen",
+            "backgroundPattern": "Dotted orange pattern overlay (similar to original red dots)"
+          },
+          "leftColumn": {
+            "heading": {
+              "text": "Welcome to Grow With Gurus",
+              "fontSize": "text-4xl lg:text-6xl font-bold",
+              "color": "text-white",
+              "lineHeight": "leading-tight",
+              "marginBottom": "mb-6"
+            },
+            "subheading": {
+              "text": "Pakistan's most trusted platform for MDCAT preparation and international scholarship guidance. Join thousands of students achieving their dreams.",
+              "fontSize": "text-lg lg:text-xl",
+              "color": "text-gray-300",
+              "marginBottom": "mb-8",
+              "lineHeight": "leading-relaxed"
+            },
+            "ctaButtons": [
+              {
+                "label": "Start Learning Today",
+                "style": "bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition-all text-base font-semibold shadow-xl shadow-orange-500/30 inline-flex items-center gap-2"
+              },
+              {
+                "label": "Browse All Resources",
+                "style": "border-2 border-orange-500 text-orange-500 px-8 py-4 rounded-full hover:bg-orange-500/10 transition-all text-base font-semibold inline-flex items-center gap-2 ml-4"
+              }
+            ],
+            "heroImage": {
+              "type": "Photo of Pakistani students studying/celebrating",
+              "alt": "GWG students achieving success",
+              "style": "rounded-2xl shadow-2xl",
+              "overlay": "Optional orange gradient overlay"
+            }
+          },
+          "rightColumn": {
+            "loginCard": {
+              "background": "bg-gradient-to-br from-gray-900 to-black",
+              "border": "border border-orange-500/30",
+              "borderRadius": "rounded-2xl",
+              "padding": "p-8",
+              "shadow": "shadow-2xl shadow-orange-500/10",
+              "backdropBlur": "backdrop-blur-xl",
+              "heading": {
+                "text": "MDCAT 2025",
+                "fontSize": "text-sm font-bold",
+                "color": "text-orange-500",
+                "marginBottom": "mb-2",
+                "badge": true
+              },
+              "subheading": {
+                "text": "Access Your Learning Dashboard",
+                "fontSize": "text-2xl font-bold",
+                "color": "text-white",
+                "marginBottom": "mb-6"
+              },
+              "form": {
+                "fields": [
+                  {
+                    "type": "text",
+                    "placeholder": "Email or Phone Number",
+                    "icon": "User icon (lucide-react)",
+                    "style": "bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all w-full"
+                  },
+                  {
+                    "type": "password",
+                    "placeholder": "Password",
+                    "icon": "Lock icon (lucide-react)",
+                    "style": "bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all w-full mt-4"
+                  }
+                ],
+                "submitButton": {
+                  "label": "Login to Dashboard",
+                  "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all mt-6 shadow-lg shadow-orange-500/30"
+                },
+                "forgotPassword": {
+                  "text": "Forgot Password?",
+                  "style": "text-orange-500 hover:text-orange-400 text-sm mt-4 inline-block"
+                },
+                "socialLogin": {
+                  "divider": "or continue with",
+                  "buttons": [
+                    {
+                      "provider": "Google",
+                      "style": "bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all flex items-center justify-center gap-2"
+                    },
+                    {
+                      "provider": "Facebook",
+                      "style": "bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-all flex items-center justify-center gap-2"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "sectionName": "Featured Topics Badge Section",
+          "component": "TopicsBadge",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-8 px-6 lg:px-12",
+            "textAlign": "text-center"
+          },
+          "content": {
+            "badge": {
+              "text": "FEATURED TOPICS",
+              "style": "inline-block bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/50 text-orange-500 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6"
+            },
+            "heading": {
+              "text": "Popular Resources",
+              "fontSize": "text-3xl lg:text-4xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-4"
+            },
+            "subheading": {
+              "text": "Explore the top resources trusted by thousands of Pakistani medical students preparing for MDCAT and international scholarships.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "maxWidth": "max-w-3xl mx-auto"
+            }
+          }
+        },
+        {
+          "sectionName": "Topic Pills/Tags",
+          "component": "TopicPills",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-6 px-6 lg:px-12",
+            "display": "flex flex-wrap gap-4 justify-center"
+          },
+          "pills": [
+            {
+              "text": "Biology and Biochemistry",
+              "icon": "Book icon",
+              "style": "bg-gray-900 border border-orange-500/30 text-white px-6 py-3 rounded-full hover:bg-orange-500/10 hover:border-orange-500 transition-all cursor-pointer font-medium flex items-center gap-2"
+                },
+                {
+                  "icon": "Beaker",
+                  "text": "Chemistry - Organic & Inorganic",
+                  "style": "bg-gray-900 border border-orange-500/30 text-white px-6 py-3 rounded-full hover:bg-orange-500/10 hover:border-orange-500 transition-all cursor-pointer font-medium flex items-center gap-2"
+                },
+                {
+                  "icon": "Zap",
+                  "text": "Physics - Mechanics & Electricity",
+                  "style": "bg-gray-900 border border-orange-500/30 text-white px-6 py-3 rounded-full hover:bg-orange-500/10 hover:border-orange-500 transition-all cursor-pointer font-medium flex items-center gap-2"
+                },
+                {
+                  "icon": "Award",
+                  "text": "Scholarship Applications",
+                  "style": "bg-orange-500/20 border border-orange-500 text-orange-500 px-6 py-3 rounded-full hover:bg-orange-500/30 transition-all cursor-pointer font-medium flex items-center gap-2"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionName": "Community CTA",
+          "component": "CommunityCTA",
+          "note": "Same as Homepage community section"
+        }
+      ]
+    },
+    {
+      "pageName": "Login Page",
+      "route": "/login",
+      "sections": [
+        {
+          "sectionName": "Navigation Header",
+          "component": "Navbar",
+          "note": "Same as Homepage navbar"
+        },
+        {
+          "sectionName": "Breadcrumb",
+          "component": "Breadcrumb",
+          "layout": {
+            "background": "bg-black",
+            "padding": "pt-24 pb-4 px-6 lg:px-12"
+          },
+          "content": {
+            "items": [
+              {
+                "icon": "Home",
+                "label": "Home",
+                "link": "/"
+              },
+              {
+                "icon": "ChevronRight",
+                "label": "Login",
+                "link": "/login",
+                "active": true
+              }
+            ]
+          }
+        },
+        {
+          "sectionName": "Login Section",
+          "component": "LoginSection",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12",
+            "minHeight": "min-h-screen",
+            "display": "grid lg:grid-cols-2 gap-12 items-center"
+          },
+          "leftColumn": {
+            "heading": {
+              "text": "Start Your Learning Journey Today",
+              "fontSize": "text-4xl lg:text-5xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-6"
+            },
+            "description": {
+              "text": "Access thousands of study resources, expert instructors, and a vibrant learning community.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-8"
+            },
+            "features": [
+              {
+                "icon": "CheckCircle",
+                "text": "Expert-led resources in 50+ subjects",
+                "style": "flex items-center gap-3 text-white mb-4"
+              },
+              {
+                "icon": "CheckCircle",
+                "text": "Learn at your own pace, anytime",
+                "style": "flex items-center gap-3 text-white mb-4"
+              },
+              {
+                "icon": "CheckCircle",
+                "text": "Earn certificates upon completion",
+                "style": "flex items-center gap-3 text-white mb-4"
+              },
+              {
+                "icon": "CheckCircle",
+                "text": "Join 100K+ active learners",
+                "style": "flex items-center gap-3 text-white mb-4"
+              }
+            ],
+            "stats": {
+              "layout": "grid grid-cols-3 gap-8 mt-12",
+              "items": [
+                {
+                  "number": "5000+",
+                  "label": "Resources",
+                  "style": "text-center"
+                },
+                {
+                  "number": "100K+",
+                  "label": "Students",
+                  "style": "text-center"
+                },
+                {
+                  "number": "500+",
+                  "label": "Instructors",
+                  "style": "text-center"
+                }
+              ]
+            }
+          },
+          "rightColumn": {
+            "loginCard": {
+              "background": "bg-gradient-to-br from-gray-900 to-black",
+              "border": "border border-orange-500/30",
+              "borderRadius": "rounded-2xl",
+              "padding": "p-8 lg:p-12",
+              "shadow": "shadow-2xl shadow-orange-500/10",
+              "heading": {
+                "text": "Welcome Back!",
+                "fontSize": "text-3xl font-bold",
+                "color": "text-white",
+                "marginBottom": "mb-2"
+              },
+              "form": {
+                "fields": [
+                  {
+                    "label": "Email Address",
+                    "type": "email",
+                    "placeholder": "you@example.com",
+                    "icon": "Mail",
+                    "style": "bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all w-full"
+                  },
+                  {
+                    "label": "Password",
+                    "type": "password",
+                    "placeholder": "Enter your password",
+                    "icon": "Lock",
+                    "showPasswordToggle": true,
+                    "style": "bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all w-full mt-4"
+                  }
+                ],
+                "rememberMe": {
+                  "text": "Remember me for 30 days",
+                  "style": "flex items-center gap-2 text-sm text-gray-400 mt-4"
+                },
+                "forgotPassword": {
+                  "text": "Forgot?",
+                  "style": "text-orange-500 hover:text-orange-400 text-sm font-medium"
+                },
+                "submitButton": {
+                  "label": "Login",
+                  "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all mt-6 shadow-lg shadow-orange-500/30"
+                },
+                "divider": {
+                  "text": "Or continue with",
+                  "style": "text-center text-gray-500 text-sm my-6"
+                },
+                "socialLogin": {
+                  "layout": "grid grid-cols-2 gap-4",
+                  "buttons": [
+                    {
+                      "provider": "Google",
+                      "icon": "Chrome",
+                      "style": "bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all flex items-center justify-center gap-2"
+                    },
+                    {
+                      "provider": "Microsoft",
+                      "icon": "Layers",
+                      "style": "bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-all flex items-center justify-center gap-2"
+                    }
+                  ]
+                },
+                "signupLink": {
+                  "text": "Already have an account?",
+                  "linkText": "Sign in here",
+                  "style": "text-center text-gray-400 text-sm mt-6",
+                  "linkStyle": "text-orange-500 hover:text-orange-400 font-medium ml-1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "sectionName": "FAQ Section",
+          "component": "FAQSection",
+          "note": "Same as Resources page FAQ"
+        },
+        {
+          "sectionName": "Community CTA",
+          "component": "CommunityCTA",
+          "note": "Same as Homepage community section"
+        }
+      ]
+    },
+    {
+      "pageName": "Register Page",
+      "route": "/register",
+      "sections": [
+        {
+          "sectionName": "Navigation Header",
+          "component": "Navbar",
+          "note": "Same as Homepage navbar"
+        },
+        {
+          "sectionName": "Breadcrumb",
+          "component": "Breadcrumb",
+          "layout": {
+            "background": "bg-black",
+            "padding": "pt-24 pb-4 px-6 lg:px-12"
+          },
+          "content": {
+            "items": [
+              {
+                "icon": "Home",
+                "label": "Home",
+                "link": "/"
+              },
+              {
+                "icon": "ChevronRight",
+                "label": "Register",
+                "link": "/register",
+                "active": true
+              }
+            ]
+          }
+        },
+        {
+          "sectionName": "Register Section",
+          "component": "RegisterSection",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12",
+            "minHeight": "min-h-screen",
+            "display": "grid lg:grid-cols-2 gap-12 items-center"
+          },
+          "leftColumn": {
+            "heading": {
+              "text": "Join Our Platform",
+              "fontSize": "text-4xl lg:text-5xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-6"
+            },
+            "description": {
+              "text": "Create your account and unlock access to powerful tools and features designed to boost your learning.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-8"
+            },
+            "features": {
+              "layout": "grid grid-cols-2 gap-6",
+              "items": [
+                {
+                  "icon": "Shield",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10 p-4 rounded-xl mb-3",
+                  "title": "Secure",
+                  "description": "End-to-end encryption",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl"
+                },
+                {
+                  "icon": "Users",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10 p-4 rounded-xl mb-3",
+                  "title": "Collaborative",
+                  "description": "Team-based workflows",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl"
+                },
+                {
+                  "icon": "BarChart3",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10 p-4 rounded-xl mb-3",
+                  "title": "Analytics",
+                  "description": "Real-time insights",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl"
+                },
+                {
+                  "icon": "Cloud",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10 p-4 rounded-xl mb-3",
+                  "title": "Cloud-based",
+                  "description": "Access anywhere",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl"
+                }
+              ]
+            },
+            "stats": {
+              "layout": "grid grid-cols-3 gap-8 mt-12",
+              "items": [
+                {
+                  "number": "5000+",
+                  "label": "Resources",
+                  "numberStyle": "text-4xl font-bold text-white",
+                  "labelStyle": "text-gray-400 text-sm"
+                },
+                {
+                  "number": "100K+",
+                  "label": "Students",
+                  "numberStyle": "text-4xl font-bold text-white",
+                  "labelStyle": "text-gray-400 text-sm"
+                },
+                {
+                  "number": "500+",
+                  "label": "Instructors",
+                  "numberStyle": "text-4xl font-bold text-white",
+                  "labelStyle": "text-gray-400 text-sm"
+                }
+              ]
+            }
+          },
+          "rightColumn": {
+            "registerCard": {
+              "background": "bg-gradient-to-br from-gray-900 to-black",
+              "border": "border border-orange-500/30",
+              "borderRadius": "rounded-2xl",
+              "padding": "p-8 lg:p-12",
+              "shadow": "shadow-2xl shadow-orange-500/10",
+              "heading": {
+                "text": "Get Started Now",
+                "fontSize": "text-3xl font-bold",
+                "color": "text-white",
+                "marginBottom": "mb-2"
+              },
+              "subheading": {
+                "text": "Join thousands of users who trust our platform",
+                "fontSize": "text-sm",
+                "color": "text-gray-400",
+                "marginBottom": "mb-6"
+              },
+              "form": {
+                "fields": [
+                  {
+                    "label": "Name",
+                    "type": "text",
+                    "placeholder": "Enter your name",
+                    "icon": "User",
+                    "style": "bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all w-full"
+                  },
+                  {
+                    "label": "Email Address",
+                    "type": "email",
+                    "placeholder": "you@example.com",
+                    "icon": "Mail",
+                    "style": "bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all w-full mt-4"
+                  },
+                  {
+                    "label": "Password",
+                    "type": "password",
+                    "placeholder": "Enter your password",
+                    "icon": "Lock",
+                    "showPasswordToggle": true,
+                    "style": "bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none transition-all w-full mt-4"
+                  }
+                ],
+                "termsCheckbox": {
+                  "text": "I agree to the Terms of Service and Privacy Policy",
+                  "style": "flex items-start gap-2 text-sm text-gray-400 mt-4",
+                  "linkStyle": "text-orange-500 hover:text-orange-400"
+                },
+                "submitButton": {
+                  "label": "Register Now",
+                  "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all mt-6 shadow-lg shadow-orange-500/30"
+                },
+                "divider": {
+                  "text": "Or continue with",
+                  "style": "text-center text-gray-500 text-sm my-6"
+                },
+                "socialLogin": {
+                  "layout": "grid grid-cols-2 gap-4",
+                  "buttons": [
+                    {
+                      "provider": "Google",
+                      "icon": "Chrome",
+                      "style": "bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all flex items-center justify-center gap-2"
+                    },
+                    {
+                      "provider": "Microsoft",
+                      "icon": "Layers",
+                      "style": "bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-all flex items-center justify-center gap-2"
+                    }
+                  ]
+                },
+                "loginLink": {
+                  "text": "Already have an account?",
+                  "linkText": "Sign in here",
+                  "style": "text-center text-gray-400 text-sm mt-6",
+                  "linkStyle": "text-orange-500 hover:text-orange-400 font-medium ml-1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "sectionName": "FAQ Section",
+          "component": "FAQSection",
+          "note": "Same as Resources page FAQ"
+        },
+        {
+          "sectionName": "Community CTA",
+          "component": "CommunityCTA",
+          "note": "Same as Homepage community section"
+        }
+      ]
+    }
+  ],
+  "globalComponents": {
+    "Footer": {
+      "layout": {
+        "background": "bg-gradient-to-br from-pink-100 via-orange-50 to-white",
+        "padding": "py-16 px-6 lg:px-12"
+      },
+      "content": {
+        "layout": "grid md:grid-cols-2 lg:grid-cols-4 gap-12",
+        "sections": [
+          {
+            "type": "branding",
+            "logo": {
+              "text": "GWG",
+              "style": "text-4xl font-black text-orange-500 mb-4"
+            },
+            "tagline": {
+              "text": "FREE Premium MDCAT Resources",
+              "style": "text-gray-900 font-bold text-lg mb-4"
+            },
+            "description": {
+              "text": "We believe no student should be left behind. Enjoy world-class MDCAT preparation & scholarship guidance — 100% FREE.",
+              "style": "text-gray-700 text-sm leading-relaxed mb-6"
+            },
+            "socialLinks": {
+              "layout": "flex gap-4",
+              "icons": [
+                {
+                  "platform": "Facebook",
+                  "icon": "Facebook",
+                  "style": "w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center hover:bg-orange-600 transition-all"
+                },
+                {
+                  "platform": "Twitter",
+                  "icon": "Twitter",
+                  "style": "w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center hover:bg-orange-600 transition-all"
+                },
+                {
+                  "platform": "YouTube",
+                  "icon": "Youtube",
+                  "style": "w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center hover:bg-orange-600 transition-all"
+                },
+                {
+                  "platform": "Instagram",
+                  "icon": "Instagram",
+                  "style": "w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center hover:bg-orange-600 transition-all"
+                }
+              ]
+            }
+          },
+          {
+            "type": "links",
+            "heading": "Popular Resources",
+            "headingStyle": "text-gray-900 font-bold text-lg mb-6",
+            "links": [
+              {
+                "text": "MDCAT Biology - Complete Course",
+                "url": "/resources/mdcat-biology"
+              },
+              {
+                "text": "MDCAT Chemistry - Full Guide",
+                "url": "/resources/mdcat-chemistry"
+              },
+              {
+                "text": "MDCAT Physics Essentials",
+                "url": "/resources/mdcat-physics"
+              },
+              {
+                "text": "Scholarship Application Guide",
+                "url": "/resources/scholarship-guide"
+              },
+              {
+                "text": "Study Abroad Programs",
+                "url": "/resources/study-abroad"
+              },
+              {
+                "text": "100,000+ Free Practice MCQs",
+                "url": "/resources/practice-mcqs"
+              }
+            ],
+            "linkStyle": "text-gray-700 hover:text-orange-500 transition-all text-sm mb-3 block"
+          },
+          {
+            "type": "links",
+            "heading": "About the Community",
+            "headingStyle": "text-gray-900 font-bold text-lg mb-6",
+            "description": {
+              "text": "Join our WhatsApp community — connect with learners, share ideas, and explore the latest in MDCAT preparation together.",
+              "style": "text-gray-700 text-sm leading-relaxed mb-6"
+            },
+            "ctaButton": {
+              "label": "Join Now",
+              "style": "bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-all font-semibold shadow-lg shadow-orange-500/30 inline-block"
+            }
+          },
+          {
+            "type": "links",
+            "heading": "Quick Links",
+            "headingStyle": "text-gray-900 font-bold text-lg mb-6",
+            "links": [
+              {
+                "text": "Home",
+                "url": "/"
+              },
+              {
+                "text": "MDCAT Prep & Labs",
+                "url": "/mdcat"
+              },
+              {
+                "text": "Scholarship Guidance",
+                "url": "/scholarships"
+              },
+              {
+                "text": "All Resources",
+                "url": "/resources"
+              },
+              {
+                "text": "Why Free",
+                "url": "/why-free"
+              },
+              {
+                "text": "Contact Us",
+                "url": "/contact"
+              }
+            ],
+            "linkStyle": "text-gray-700 hover:text-orange-500 transition-all text-sm mb-3 block"
+          }
+        ],
+        "copyright": {
+          "text": "Copyright © 2025 Grow With Gurus LLC",
+          "style": "text-center text-gray-600 text-sm mt-12 pt-8 border-t border-gray-300"
+        }
+      }
+    }
+  },
+  "designTokens": {
+    "spacing": {
+      "xs": "0.25rem",
+      "sm": "0.5rem",
+      "md": "1rem",
+      "lg": "1.5rem",
+      "xl": "2rem",
+      "2xl": "3rem",
+      "3xl": "4rem"
+    },
+    "borderRadius": {
+      "sm": "0.375rem",
+      "md": "0.5rem",
+      "lg": "0.75rem",
+      "xl": "1rem",
+      "2xl": "1.5rem",
+      "3xl": "2rem",
+      "full": "9999px"
+    },
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+      "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+      "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
+      "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+      "orange": "0 10px 40px rgba(255, 107, 0, 0.3)"
+    },
+    "transitions": {
+      "fast": "150ms ease-in-out",
+      "normal": "300ms ease-in-out",
+      "slow": "500ms ease-in-out"
+    }
+  },
+  "animations": {
+    "fadeIn": {
+      "keyframes": "opacity: 0 → 1",
+      "duration": "300ms",
+      "timing": "ease-in"
+    },
+    "slideInUp": {
+      "keyframes": "transform: translateY(20px) opacity: 0 → translateY(0) opacity: 1",
+      "duration": "400ms",
+      "timing": "ease-out"
+    },
+    "scaleIn": {
+      "keyframes": "transform: scale(0.95) opacity: 0 → scale(1) opacity: 1",
+      "duration": "300ms",
+      "timing": "ease-out"
+    },
+    "pulse": {
+      "keyframes": "opacity: 1 → 0.5 → 1",
+      "duration": "2s",
+      "timing": "ease-in-out",
+      "iteration": "infinite"
+    }
+  },
+  "responsiveBreakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+  "imageAssets": {
+    "heroImages": [
+      "Pakistani students studying together at desk",
+      "Student celebrating MDCAT success with acceptance letter",
+      "Group of diverse students in university setting",
+      "Student using laptop for online learning"
+    ],
+    "courseImages": [
+      "Biology textbooks and microscope on desk",
+      "Chemistry lab equipment and periodic table",
+      "Physics equations on blackboard",
+      "English grammar books and writing materials",
+      "Scholarship application documents and passport",
+      "World map showing study abroad destinations"
+    ],
+    "iconLibrary": "lucide-react",
+    "logoFormat": "SVG or PNG with transparent background"
+  },
+  "contentGuidelines": {
+    "voiceAndTone": {
+      "description": "Conversational yet authoritative. Motivational without being preachy. Use relatable language that resonates with ambitious Pakistani students.",
+      "examples": [
+        "DO: 'Master MDCAT with proven strategies from top scorers.'",
+        "DON'T: 'You will definitely get 200/200 if you join us!'",
+        "DO: 'Join 5,000+ students who trust GWG for their medical dreams.'",
+        "DON'T: 'We are the best MDCAT platform in Pakistan.'"
+      ]
+    },
+    "writingStyle": {
+      "sentenceLength": "Keep sentences under 20 words for clarity",
+      "paragraphLength": "2-4 sentences maximum",
+      "activeVoice": "Always use active voice over passive",
+      "avoidJargon": "Explain technical terms when first introduced",
+      "culturalContext": "Use Pakistani educational context (KEMU, Dow, NUMS, etc.)"
+    }
+  },
+  "accessibilityRequirements": {
+    "colorContrast": "Minimum 4.5:1 ratio for text on backgrounds",
+    "focusStates": "All interactive elements must have visible focus indicators",
+    "altText": "All images must have descriptive alt text",
+    "keyboardNavigation": "All functionality accessible via keyboard",
+    "screenReaderSupport": "Semantic HTML and ARIA labels where needed"
+  },
+  "performanceOptimization": {
+    "imageOptimization": "Use next/image or similar for lazy loading and optimization",
+    "codeSpltting": "Lazy load components below the fold",
+    "fontLoading": "Use font-display: swap for web fonts",
+    "cssOptimization": "Use Tailwind's purge feature to remove unused styles"
+  }
+
+            {
+              "text": "Chemistry - Organic & Inorganic",
+              "icon": "Flask icon",
+              "style": "bg-gray-900 border border-orange-500/30 text-white px-6 py-3 rounded-full hover:bg-orange-500/10 hover:border-orange-500 transition-all cursor-pointer font-medium flex items-center gap-2"
+            },
+            {
+              "text": "Physics - Mechanics & Electricity",
+              "icon": "Zap icon",
+              "style": "bg-gray-900 border border-orange-500/30 text-white px-6 py-3 rounded-full hover:bg-orange-500/10 hover:border-orange-500 transition-all cursor-pointer font-medium flex items-center gap-2"
+            },
+            {
+              "text": "English - Comprehension & Grammar",
+              "icon": "Type icon",
+              "style": "bg-gray-900 border border-orange-500/30 text-white px-6 py-3 rounded-full hover:bg-orange-500/10 hover:border-orange-500 transition-all cursor-pointer font-medium flex items-center gap-2"
+            },
+            {
+              "text": "Scholarship Applications",
+              "icon": "Award icon",
+              "style": "bg-orange-500/20 border border-orange-500 text-orange-500 px-6 py-3 rounded-full hover:bg-orange-500/30 transition-all cursor-pointer font-medium flex items-center gap-2"
+            }
+          ]
+        },
+        {
+          "sectionName": "About GWG - Info Cards",
+          "component": "AboutSection",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12"
+          },
+          "content": {
+            "badge": {
+              "text": "ABOUT US",
+              "style": "inline-block bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/50 text-orange-500 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6"
+            },
+            "heading": {
+              "text": "Empowering Pakistan's Future Medical Professionals",
+              "fontSize": "text-3xl lg:text-5xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-6",
+              "maxWidth": "max-w-4xl"
+            },
+            "description": {
+              "text": "Industry-driven learning designed to turn MDCAT aspirants into successful medical students — right from Pakistan to the world.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-12",
+              "maxWidth": "max-w-3xl"
+            },
+            "infoCards": {
+              "layout": "grid md:grid-cols-2 lg:grid-cols-4 gap-6",
+              "cards": [
+                {
+                  "icon": "Award (lucide-react)",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10",
+                  "title": "Proven Success Rate",
+                  "description": "95% of our students secure admission in top medical colleges across Pakistan.",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                },
+                {
+                  "icon": "BookOpen (lucide-react)",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10",
+                  "title": "Complete Study Material",
+                  "description": "Master every MDCAT topic with our detailed notes, practice tests, and video lectures.",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                },
+                {
+                  "icon": "Users (lucide-react)",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10",
+                  "title": "Expert Mentorship",
+                  "description": "Learn from experienced instructors and successful MDCAT achievers who guide you every step.",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                },
+                {
+                  "icon": "Globe (lucide-react)",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10",
+                  "title": "International Scholarships",
+                  "description": "Connect with opportunities worldwide and get personalized application support for studying abroad.",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                }
+              ]
+            },
+            "brandCard": {
+              "layout": "mt-12 bg-gradient-to-br from-orange-500/20 to-orange-600/10 border-2 border-orange-500/50 rounded-2xl p-8 lg:p-12 text-center max-w-4xl mx-auto",
+              "logo": {
+                "text": "GWG",
+                "style": "text-6xl font-black text-orange-500 mb-4",
+                "tagline": "GROW WITH GURUS"
+              },
+              "aboutText": {
+                "text": "Grow With Gurus is Pakistan's leading MDCAT preparation and scholarship guidance platform. We combine expert teaching, proven strategies, and real-world insights to help ambitious students secure their place in top medical schools — both in Pakistan and abroad. Our mission is simple: create opportunities, unlock potential, and shape the future of Pakistan's medical professionals.",
+                "style": "text-gray-300 text-base lg:text-lg leading-relaxed max-w-3xl mx-auto"
+              }
+            }
+          }
+        },
+        {
+          "sectionName": "Offerings Section",
+          "component": "OfferingsSection",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12"
+          },
+          "content": {
+            "badge": {
+              "text": "WE OFFER",
+              "style": "inline-block bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/50 text-orange-500 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6"
+            },
+            "heading": {
+              "text": "Master MDCAT & Unlock Scholarships Abroad",
+              "fontSize": "text-3xl lg:text-5xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-6"
+            },
+            "description": {
+              "text": "From comprehensive MDCAT prep to personalized scholarship guidance — everything you need to build your medical career.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-12",
+              "maxWidth": "max-w-3xl"
+            },
+            "resourceCards": {
+              "layout": "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
+              "cards": [
+                {
+                  "badge": "FEATURED",
+                  "badgeColor": "bg-orange-500/20 text-orange-500",
+                  "image": {
+                    "src": "Student studying with books and laptop - MDCAT prep scene",
+                    "alt": "MDCAT Preparation",
+                    "style": "rounded-t-xl w-full h-48 object-cover"
+                  },
+                  "category": "MDCAT Preparation",
+                  "title": "Complete MDCAT Mastery Course",
+                  "description": "Everything you need to ace MDCAT: Biology, Chemistry, Physics, English. Video lectures, practice tests, and live doubt sessions.",
+                  "level": "All Levels",
+                  "price": "PKR 15,000",
+                  "rating": "4.9 ⭐ (2,450 students)",
+                  "cta": "Enroll Now",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all group"
+                },
+                {
+                  "badge": "POPULAR",
+                  "badgeColor": "bg-orange-500/20 text-orange-500",
+                  "image": {
+                    "src": "Student with passport and university acceptance letter",
+                    "alt": "Scholarship Guidance",
+                    "style": "rounded-t-xl w-full h-48 object-cover"
+                  },
+                  "category": "Scholarship Guidance",
+                  "title": "Study Abroad Scholarship Program",
+                  "description": "Get personalized help with scholarship applications, SOPs, and interviews for fully-funded programs worldwide.",
+                  "level": "Intermediate",
+                  "price": "PKR 8,000",
+                  "rating": "4.8 ⭐ (1,230 students)",
+                  "cta": "Learn More",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all group"
+                },
+                {
+                  "badge": "NEW",
+                  "badgeColor": "bg-orange-500/20 text-orange-500",
+                  "image": {
+                    "src": "Workshop or seminar scene with students",
+                    "alt": "Live Workshops",
+                    "style": "rounded-t-xl w-full h-48 object-cover"
+                  },
+                  "category": "Live Workshops",
+                  "title": "MDCAT Strategy Bootcamp",
+                  "description": "Intensive 2-day workshop covering time management, exam strategies, and high-yield topics with top scorers.",
+                  "level": "Beginner to Advanced",
+                  "price": "PKR 3,500",
+                  "rating": "5.0 ⭐ (450 students)",
+                  "cta": "Register Now",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all group"
+                }
+              ]
+            },
+            "ctaButton": {
+              "label": "Explore All Resources",
+              "style": "mt-12 mx-auto block w-fit bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition-all text-base font-semibold shadow-xl shadow-orange-500/30"
+            }
+          }
+        },
+        {
+          "sectionName": "Student Testimonials",
+          "component": "TestimonialsSection",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12"
+          },
+          "content": {
+            "badge": {
+              "text": "SUCCESS STORIES",
+              "style": "inline-block bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/50 text-orange-500 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6 mx-auto"
+            },
+            "heading": {
+              "text": "What Our Students Say",
+              "fontSize": "text-3xl lg:text-4xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-4",
+              "textAlign": "text-center"
+            },
+            "subheading": {
+              "text": "Explore the success stories of students who achieved their MDCAT dreams and secured scholarships abroad with GWG.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-12",
+              "textAlign": "text-center",
+              "maxWidth": "max-w-3xl mx-auto"
+            },
+            "testimonialCards": {
+              "layout": "grid md:grid-cols-2 lg:grid-cols-3 gap-6",
+              "cards": [
+                {
+                  "rating": "⭐⭐⭐⭐⭐",
+                  "text": "GWG helped me score 189/200 in MDCAT! The study material and mock tests were exactly like the real exam. I got into King Edward Medical University!",
+                  "studentName": "Ayesha Malik",
+                  "studentInfo": "KEMU, Lahore",
+                  "avatar": "Student photo or initials avatar",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                },
+                {
+                  "rating": "⭐⭐⭐⭐⭐",
+                  "text": "I never thought I could study abroad, but GWG's scholarship team guided me through every step. Now I'm on a full scholarship in Germany!",
+                  "studentName": "Ahmed Hassan",
+                  "studentInfo": "Heidelberg University, Germany",
+                  "avatar": "Student photo or initials avatar",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                },
+                {
+                  "rating": "⭐⭐⭐⭐⭐",
+                  "text": "The live doubt sessions saved me! I was struggling with organic chemistry, but the mentors explained everything so clearly. Highly recommend!",
+                  "studentName": "Fatima Noor",
+                  "studentInfo": "Aga Khan University",
+                  "avatar": "Student photo or initials avatar",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                },
+                {
+                  "rating": "⭐⭐⭐⭐⭐",
+                  "text": "Best decision ever! GWG's bootcamp taught me time management strategies that boosted my score by 30 marks. Worth every rupee.",
+                  "studentName": "Ali Raza",
+                  "studentInfo": "Dow Medical College",
+                  "avatar": "Student photo or initials avatar",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                },
+                {
+                  "rating": "⭐⭐⭐⭐⭐",
+                  "text": "I secured a scholarship to study in Canada thanks to GWG! Their SOP review and interview prep were game-changers. Forever grateful!",
+                  "studentName": "Sara Khan",
+                  "studentInfo": "University of Toronto, Canada",
+                  "avatar": "Student photo or initials avatar",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                },
+                {
+                  "rating": "⭐⭐⭐⭐⭐",
+                  "text": "The study material is top-notch! Biology and chemistry notes are concise yet cover everything. I recommend GWG to all my friends.",
+                  "studentName": "Hamza Ali",
+                  "studentInfo": "Allama Iqbal Medical College",
+                  "avatar": "Student photo or initials avatar",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl hover:border-orange-500/50 transition-all"
+                }
+              ]
+            },
+            "ctaButton": {
+              "label": "Start Learning Now",
+              "style": "mt-12 mx-auto block w-fit bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition-all text-base font-semibold shadow-xl shadow-orange-500/30"
+            }
+          }
+        },
+        {
+          "sectionName": "Community CTA Section",
+          "component": "CommunityCTA",
+          "layout": {
+            "background": "bg-gradient-to-br from-orange-50 via-white to-pink-50",
+            "padding": "py-16 px-6 lg:px-12",
+            "borderRadius": "rounded-3xl",
+            "margin": "mx-6 lg:mx-12 my-16",
+            "position": "relative overflow-hidden"
+          },
+          "content": {
+            "badge": {
+              "icon": "Users (lucide-react)",
+              "text": "COMMUNITY",
+              "style": "inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500 text-orange-600 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6"
+            },
+            "heading": {
+              "text": "Join Our Community Where Dreams Become Reality",
+              "fontSize": "text-3xl lg:text-5xl font-bold",
+              "color": "text-gray-900",
+              "marginBottom": "mb-6"
+            },
+            "description": {
+              "text": "Join our WhatsApp community — connect with fellow MDCAT aspirants, share study tips, get instant doubt resolution, and stay updated on scholarship deadlines.",
+              "fontSize": "text-lg",
+              "color": "text-gray-700",
+              "marginBottom": "mb-8",
+              "maxWidth": "max-w-2xl"
+            },
+            "ctaButton": {
+              "label": "Join WhatsApp Community",
+              "style": "bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition-all text-base font-semibold shadow-xl shadow-orange-500/30 inline-flex items-center gap-2"
+            },
+            "decorativeElements": {
+              "dottedPattern": "Orange dotted mesh pattern (top-right corner)",
+              "chatBubbles": [
+                {
+                  "text": "Can I get info about scholarships?",
+                  "style": "bg-white border border-gray-200 px-4 py-3 rounded-2xl shadow-md text-gray-700 text-sm absolute top-20 right-32"
+                },
+                {
+                  "text": "Are you guys offering free courses?",
+                  "style": "bg-white border border-gray-200 px-4 py-3 rounded-2xl shadow-md text-gray-700 text-sm absolute bottom-32 right-20"
+                }
+              ],
+              "avatarIllustration": {
+                "description": "3 student avatars in circular frames with dotted connecting lines",
+                "style": "absolute bottom-8 right-8 opacity-80"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "pageName": "About Us",
+      "route": "/about",
+      "sections": [
+        {
+          "sectionName": "Navigation Header",
+          "component": "Navbar",
+          "note": "Same as Homepage navbar"
+        },
+        {
+          "sectionName": "Breadcrumb",
+          "component": "Breadcrumb",
+          "layout": {
+            "background": "bg-black",
+            "padding": "pt-24 pb-4 px-6 lg:px-12"
+          },
+          "content": {
+            "items": [
+              {
+                "icon": "Home",
+                "label": "Home",
+                "link": "/"
+              },
+              {
+                "icon": "ChevronRight",
+                "label": "About Us",
+                "link": "/about",
+                "active": true
+              }
+            ],
+            "style": "flex items-center gap-2 text-sm text-gray-400"
+          }
+        },
+        {
+          "sectionName": "About Hero",
+          "component": "AboutHero",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12",
+            "display": "grid lg:grid-cols-2 gap-12 items-center"
+          },
+          "leftColumn": {
+            "heading": {
+              "text": "Empowering The Next Generation of Pakistani Medical Professionals",
+              "fontSize": "text-4xl lg:text-5xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-6"
+            },
+            "description": {
+              "text": "Industry-driven learning designed to turn MDCAT aspirants into skilled medical professionals — right from Pakistan to the world.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "lineHeight": "leading-relaxed"
+            }
+          },
+          "rightColumn": {
+            "features": {
+              "layout": "grid grid-cols-2 gap-6",
+              "items": [
+                {
+                  "icon": "BookOpen",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10 p-4 rounded-xl mb-3",
+                  "title": "Complete Study Material",
+                  "description": "Master every topic with expert notes and practice tests.",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl"
+                },
+                {
+                  "icon": "Award",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10 p-4 rounded-xl mb-3",
+                  "title": "Certificate of Excellence",
+                  "description": "Get recognized credentials that boost your profile.",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl"
+                },
+                {
+                  "icon": "Users",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10 p-4 rounded-xl mb-3",
+                  "title": "Expert Mentorship",
+                  "description": "Learn from top MDCAT scorers and experienced instructors.",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl"
+                },
+                {
+                  "icon": "Globe",
+                  "iconColor": "text-orange-500",
+                  "iconBackground": "bg-orange-500/10 p-4 rounded-xl mb-3",
+                  "title": "Global Opportunities",
+                  "description": "Connect with scholarship programs and study abroad options.",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 p-6 rounded-xl"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionName": "Brand Story Card",
+          "component": "BrandStoryCard",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12"
+          },
+          "content": {
+            "card": {
+              "background": "bg-gradient-to-br from-orange-500/10 to-orange-600/5",
+              "border": "border-2 border-orange-500/30",
+              "borderRadius": "rounded-3xl",
+              "padding": "p-12",
+              "display": "grid lg:grid-cols-2 gap-12 items-center"
+            },
+            "leftColumn": {
+              "logo": {
+                "text": "GWG",
+                "fontSize": "text-8xl font-black",
+                "color": "text-orange-500",
+                "marginBottom": "mb-4"
+              },
+              "tagline": {
+                "text": "GROW WITH GURUS",
+                "fontSize": "text-2xl font-bold",
+                "color": "text-white",
+                "letterSpacing": "tracking-wider"
+              }
+            },
+            "rightColumn": {
+              "heading": {
+                "text": "About Grow With Gurus",
+                "fontSize": "text-2xl font-bold",
+                "color": "text-white",
+                "marginBottom": "mb-4"
+              },
+              "paragraphs": [
+                {
+                  "text": "Grow With Gurus is Pakistan's most trusted learning platform for MDCAT preparation and international scholarship guidance. We combine expert teaching, proven test-taking strategies, and real-world career insights to help ambitious students achieve their medical dreams.",
+                  "style": "text-gray-300 text-base leading-relaxed mb-4"
+                },
+                {
+                  "text": "Our mission is simple: create opportunities, unlock potential, and shape the future of Pakistan's healthcare professionals. Whether you're targeting top medical colleges in Pakistan or seeking fully-funded scholarships abroad, we provide the expert guidance and comprehensive resources you need to succeed.",
+                  "style": "text-gray-300 text-base leading-relaxed"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionName": "What We Offer",
+          "component": "OfferingsGrid",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12"
+          },
+          "content": {
+            "badge": {
+              "text": "WE OFFER",
+              "style": "inline-block bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/50 text-orange-500 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6"
+            },
+            "heading": {
+              "text": "Master Skills That Define Your Medical Future",
+              "fontSize": "text-3xl lg:text-5xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-6"
+            },
+            "description": {
+              "text": "From MDCAT prep to scholarship applications — everything you need through structured, expert-designed programs for real-world success.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-12",
+              "maxWidth": "max-w-3xl"
+            },
+            "offeringCards": {
+              "layout": "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
+              "cards": [
+                {
+                  "image": {
+                    "src": "Student studying with MDCAT books",
+                    "style": "w-full h-56 object-cover rounded-t-xl"
+                  },
+                  "badge": "FEATURED",
+                  "badgeColor": "bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold absolute top-4 right-4",
+                  "title": "Complete MDCAT Preparation",
+                  "description": "Learn Biology, Chemistry, Physics, and English. Master every topic with video lectures, detailed notes, and thousands of practice questions.",
+                  "level": "All Levels",
+                  "icon": "BookOpen",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 transition-all group relative"
+                },
+                {
+                  "image": {
+                    "src": "Student with university acceptance letter",
+                    "style": "w-full h-56 object-cover rounded-t-xl"
+                  },
+                  "badge": "POPULAR",
+                  "badgeColor": "bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold absolute top-4 right-4",
+                  "title": "Scholarship Application Guidance",
+                  "description": "Get expert help with scholarship research, SOP writing, interview preparation, and application reviews for fully-funded programs.",
+                  "level": "Intermediate",
+                  "icon": "Award",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 transition-all group relative"
+                },
+                {
+                  "image": {
+                    "src": "Live workshop or webinar scene",
+                    "style": "w-full h-56 object-cover rounded-t-xl"
+                  },
+                  "badge": "NEW",
+                  "badgeColor": "bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold absolute top-4 right-4",
+                  "title": "MDCAT Strategy Workshops",
+                  "description": "Intensive bootcamps covering time management, high-yield topics, exam strategies, and mental health for test day success.",
+                  "level": "All Levels",
+                  "icon": "Users",
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 transition-all group relative"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionName": "Community CTA",
+          "component": "CommunityCTA",
+          "note": "Same as Homepage community section"
+        }
+      ]
+    },
+    {
+      "pageName": "All Resources",
+      "route": "/resources",
+      "sections": [
+        {
+          "sectionName": "Navigation Header",
+          "component": "Navbar",
+          "note": "Same as Homepage navbar"
+        },
+        {
+          "sectionName": "Breadcrumb",
+          "component": "Breadcrumb",
+          "layout": {
+            "background": "bg-black",
+            "padding": "pt-24 pb-4 px-6 lg:px-12"
+          },
+          "content": {
+            "items": [
+              {
+                "icon": "Home",
+                "label": "Home",
+                "link": "/"
+              },
+              {
+                "icon": "ChevronRight",
+                "label": "All Resources",
+                "link": "/resources",
+                "active": true
+              }
+            ]
+          }
+        },
+        {
+          "sectionName": "Resources Header",
+          "component": "ResourcesHeader",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-8 px-6 lg:px-12"
+          },
+          "content": {
+            "heading": {
+              "text": "All Learning Resources",
+              "fontSize": "text-3xl lg:text-4xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-4"
+            },
+            "description": {
+              "text": "Explore our complete collection of MDCAT prep materials, scholarship guidance, and career resources designed to help you succeed.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-8"
+            },
+            "filterButton": {
+              "label": "Filter",
+              "icon": "SlidersHorizontal",
+              "style": "bg-gray-900 border border-orange-500/30 text-white px-6 py-3 rounded-lg hover:bg-orange-500/10 hover:border-orange-500 transition-all inline-flex items-center gap-2 font-medium"
+            }
+          }
+        },
+        {
+          "sectionName": "Resources Grid",
+          "component": "ResourcesGrid",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-8 px-6 lg:px-12"
+          },
+          "content": {
+            "grid": {
+              "layout": "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
+              "cards": [
+                {
+                  "image": {
+                    "src": "MDCAT biology study materials",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "badge": "FEATURED",
+                  "badgeColor": "bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold absolute top-4 left-4",
+                  "title": "MDCAT Biology Mastery",
+                  "description": "Complete biology coverage: Cell biology, genetics, human physiology, ecology. Video lectures, notes, and 1000+ practice MCQs.",
+                  "rating": "4.9 ⭐",
+                  "students": "3,240 students",
+                  "price": "PKR 5,000",
+                  "originalPrice": "PKR 8,000",
+                  "level": "All Levels",
+                  "ctaButton": {
+                    "label": "Enroll Now",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                },
+                {
+                  "image": {
+                    "src": "Chemistry lab equipment and formulas",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "badge": "POPULAR",
+                  "badgeColor": "bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold absolute top-4 left-4",
+                  "title": "MDCAT Chemistry Complete",
+                  "description": "Organic, inorganic, and physical chemistry made simple. Expert strategies for solving tricky questions quickly.",
+                  "rating": "4.8 ⭐",
+                  "students": "2,890 students",
+                  "price": "PKR 5,000",
+                  "originalPrice": "PKR 8,000",
+                  "level": "Intermediate",
+                  "ctaButton": {
+                    "label": "Enroll Now",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                },
+                {
+                  "image": {
+                    "src": "Physics equations and diagrams",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "badge": "NEW",
+                  "badgeColor": "bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold absolute top-4 left-4",
+                  "title": "MDCAT Physics Essentials",
+                  "description": "Mechanics, electricity, waves, and modern physics. Concept clarity with numerical problem-solving techniques.",
+                  "rating": "5.0 ⭐",
+                  "students": "1,560 students",
+                  "price": "PKR 4,500",
+                  "originalPrice": "PKR 7,000",
+                  "level": "Beginner",
+                  "ctaButton": {
+                    "label": "Enroll Now",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                },
+                {
+                  "image": {
+                    "src": "English grammar and comprehension books",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "title": "MDCAT English Excellence",
+                  "description": "Grammar, vocabulary, comprehension passages. Master English section with proven techniques and daily practice.",
+                  "rating": "4.7 ⭐",
+                  "students": "2,120 students",
+                  "price": "PKR 3,000",
+                  "originalPrice": "PKR 5,000",
+                  "level": "All Levels",
+                  "ctaButton": {
+                    "label": "Enroll Now",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                },
+                {
+                  "image": {
+                    "src": "Scholarship application documents",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "title": "Erasmus Mundus Scholarship Guide",
+                  "description": "Step-by-step guide to applying for fully-funded European scholarships. SOP templates, interview prep included.",
+                  "rating": "4.9 ⭐",
+                  "students": "980 students",
+                  "price": "PKR 6,000",
+                  "originalPrice": "PKR 10,000",
+                  "level": "Advanced",
+                  "ctaButton": {
+                    "label": "Learn More",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                },
+                {
+                  "image": {
+                    "src": "Study abroad countries map",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "title": "Study Abroad Roadmap",
+                  "description": "Compare scholarships in USA, UK, Germany, Canada, Australia. Country guides, visa requirements, and application timelines.",
+                  "rating": "4.8 ⭐",
+                  "students": "1,430 students",
+                  "price": "PKR 4,000",
+                  "originalPrice": "PKR 7,000",
+                  "level": "Intermediate",
+                  "ctaButton": {
+                    "label": "Learn More",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                },
+                {
+                  "image": {
+                    "src": "Mock test interface",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "title": "MDCAT Mock Test Series",
+                  "description": "20 full-length mock tests with detailed solutions. Timed practice, performance analytics, and weak area identification.",
+                  "rating": "5.0 ⭐",
+                  "students": "4,120 students",
+                  "price": "PKR 3,500",
+                  "originalPrice": "PKR 6,000",
+                  "level": "All Levels",
+                  "ctaButton": {
+                    "label": "Start Testing",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                },
+                {
+                  "image": {
+                    "src": "Workshop or bootcamp scene",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "title": "Time Management Bootcamp",
+                  "description": "2-day intensive workshop on exam strategies, speed-solving techniques, and mental preparation for MDCAT.",
+                  "rating": "4.9 ⭐",
+                  "students": "670 students",
+                  "price": "PKR 3,500",
+                  "originalPrice": "PKR 5,000",
+                  "level": "All Levels",
+                  "ctaButton": {
+                    "label": "Register Now",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                },
+                {
+                  "image": {
+                    "src": "SOP writing and documents",
+                    "style": "w-full h-48 object-cover rounded-t-xl"
+                  },
+                  "title": "SOP Writing Masterclass",
+                  "description": "Learn how to write compelling statements of purpose that get you scholarships. Real examples and expert reviews.",
+                  "rating": "4.8 ⭐",
+                  "students": "540 students",
+                  "price": "PKR 2,500",
+                  "originalPrice": "PKR 4,000",
+                  "level": "Intermediate",
+                  "ctaButton": {
+                    "label": "Enroll Now",
+                    "style": "w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all"
+                  },
+                  "style": "bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-xl overflow-hidden hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 transition-all relative"
+                }
+              ]
+            },
+            "loadMoreButton": {
+              "label": "Load More",
+              "style": "mt-12 mx-auto block bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition-all text-base font-semibold shadow-xl shadow-orange-500/30"
+            }
+          }
+        },
+        {
+          "sectionName": "FAQ Section",
+          "component": "FAQSection",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12"
+          },
+          "content": {
+            "badge": {
+              "text": "FEATURED TOPICS",
+              "style": "inline-block bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/50 text-orange-500 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6"
+            },
+            "heading": {
+              "text": "Frequently Asked Questions",
+              "fontSize": "text-3xl lg:text-4xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-6",
+              "textAlign": "text-center"
+            },
+            "description": {
+              "text": "Find quick answers to common questions about MDCAT preparation, scholarships, and our learning resources.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-12",
+              "textAlign": "text-center",
+              "maxWidth": "max-w-3xl mx-auto"
+            },
+            "faqAccordion": {
+              "layout": "max-w-4xl mx-auto space-y-4",
+              "items": [
+                {
+                  "question": "How do I access the study materials after enrolling?",
+                  "answer": "Once you enroll in any resource, you'll get instant access to all materials through your student dashboard. You can watch videos, download notes, and take practice tests anytime.",
+                  "style": "bg-gray-900 border border-orange-500/20 rounded-xl p-6 hover:border-orange-500/50 transition-all cursor-pointer"
+                },
+                {
+                  "question": "Are the mock tests similar to the actual MDCAT exam?",
+                  "answer": "Yes! Our mock tests are designed by MDCAT toppers and experienced instructors. They mirror the actual exam pattern, difficulty level, and time constraints to give you realistic practice.",
+                  "style": "bg-gray-900 border border-orange-500/20 rounded-xl p-6 hover:border-orange-500/50 transition-all cursor-pointer"
+                },
+                {
+                  "question": "Do you offer refunds if I'm not satisfied?",
+                  "answer": "We offer a 7-day money-back guarantee. If you're not happy with the resource quality within the first week, contact our support team for a full refund.",
+                  "style": "bg-gray-900 border border-orange-500/20 rounded-xl p-6 hover:border-orange-500/50 transition-all cursor-pointer"
+                },
+                {
+                  "question": "Can I get personalized guidance for scholarship applications?",
+                  "answer": "Absolutely! Our scholarship guidance package includes one-on-one mentorship, SOP reviews, and interview preparation tailored to your target universities and programs.",
+                  "style": "bg-gray-900 border border-orange-500/20 rounded-xl p-6 hover:border-orange-500/50 transition-all cursor-pointer"
+                }
+              ]
+            },
+            "helpCard": {
+              "layout": "mt-12 bg-gradient-to-br from-orange-50 to-white border-2 border-orange-500/30 rounded-2xl p-8 max-w-2xl mx-auto text-center",
+              "heading": {
+                "text": "Still Have Questions?",
+                "fontSize": "text-2xl font-bold",
+                "color": "text-gray-900",
+                "marginBottom": "mb-4"
+              },
+              "description": {
+                "text": "Contact us! We're here to help you succeed.",
+                "fontSize": "text-base",
+                "color": "text-gray-700",
+                "marginBottom": "mb-6"
+              },
+              "studentImages": {
+                "description": "3 student avatars in circular frames",
+                "style": "flex justify-center -space-x-4 mb-6"
+              },
+              "ctaButton": {
+                "label": "Talk to Our Team",
+                "style": "bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-all font-semibold shadow-lg shadow-orange-500/30 inline-flex items-center gap-2"
+              }
+            }
+          }
+        },
+        {
+          "sectionName": "Popular Topics Pills",
+          "component": "TopicsPills",
+          "layout": {
+            "background": "bg-black",
+            "padding": "py-16 px-6 lg:px-12"
+          },
+          "content": {
+            "badge": {
+              "text": "FEATURED TOPICS",
+              "style": "inline-block bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/50 text-orange-500 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6 mx-auto"
+            },
+            "heading": {
+              "text": "Popular Topics",
+              "fontSize": "text-3xl lg:text-4xl font-bold",
+              "color": "text-white",
+              "marginBottom": "mb-6",
+              "textAlign": "text-center"
+            },
+            "description": {
+              "text": "Explore the topics covered in our resources, designed to help you master MDCAT and secure scholarships worldwide.",
+              "fontSize": "text-lg",
+              "color": "text-gray-400",
+              "marginBottom": "mb-12",
+              "textAlign": "text-center",
+              "maxWidth": "max-w-3xl mx-auto"
+            },
+            "pills": {
+              "layout": "flex flex-wrap gap-4 justify-center",
+              "items": [
+                {
+                  "icon": "Microscope",
+                  "text": "Biology - Cell Biology & Genetics",
+                  "style": "bg-gray-900 border border-orange-500/30 text-white px-6 py-3 rounded-full hover:bg-orange-500/10 hover:border-orange-500 transition"}

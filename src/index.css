@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange-50: #FFF7ED;
+  --color-orange-100: #FFEDD5;
+  --color-orange-200: #FED7AA;
+  --color-orange-300: #FDBA74;
+  --color-orange-400: #FB923C;
+  --color-orange-500: #FF6B00;
+  --color-orange-600: #EA580C;
+  --color-orange-700: #C2410C;
+  --color-orange-800: #9A3412;
+  --color-orange-900: #7C2D12;
+
+  --font-primary: Inter, system-ui, -apple-system, sans-serif;
+  --font-secondary: Poppins, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-primary);
+  }
+}
