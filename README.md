@@ -29,7 +29,7 @@ This project was built using **Vibe Coding** principles — focusing on flow, in
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/raiyhassanali/growwithgurus-web-design-react-tailwind.git
-    cd simple-todo-app
+    cd growwithgurus-web-design-react-tailwind
     ```
 
 2.  **Install dependencies:**
