@@ -1,16 +1,50 @@
-# React + Vite
+# Grow With Gurus (GWG) - Educational Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Grow With Gurus**, a premium educational platform designed to empower Pakistani students for MDCAT preparation and international scholarship opportunities. Since we believe that education should be accessible to everyone, this platform provides world-class resources completely free of charge.
 
-Currently, two official plugins are available:
+## 🚀 Built with Vibe Coding
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was built using **Vibe Coding** principles — focusing on flow, intuition, and rapid iteration to create a product that feels alive and premium from the very first commit.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**: For building a dynamic and responsive user interface.
+- **Tailwind CSS v4**: For modern, utility-first styling with a custom design system.
+- **React Router**: For seamless client-side navigation and routing.
+- **Lucide React**: For beautiful, consistent iconography.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop.
+- **Modern UI/UX**: Glassmorphism, smooth gradients, and interactive elements.
+- **Component-Based Architecture**: Modular and reusable components (Navbar, Footer, Hero, etc.).
+- **Comprehensive Pages**:
+  - **Home**: Dynamic landing page with hero and feature highlights.
+  - **Login/Register**: Secure-feeling authentication UI.
+  - **About**: Brand story and offerings.
+  - **Resources**: Filterable grid of educational materials.
+
+## 📦 Getting Started
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/raiyhassanali/simple-todo-app.git
+    cd simple-todo-app
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open your browser:**
+    Navigate to `http://localhost:5173` to view the app.
+
+---
+
+*Verified and Executed by Antigravity*
